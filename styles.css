@@ -1,0 +1,177 @@
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .logo {
+    font-family: 'Concert One', cursive;
+    color:#7083b6;
+    font-size: 24px;
+  }
+  
+  .login-btn {
+    background-color: #7083b6;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navegação */
+  nav {
+    border-top: 2px solid #7083b6;
+    border-bottom: 2px solid #7083b6;
+    text-align: center;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #7083b6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  
+  /* Galeria */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding: 40px;
+  }
+  
+  .img1 {
+    grid-column: span 1;
+  }
+  
+  .img2 {
+    grid-column: span 2;
+  }
+  .img3 {
+    grid-column: span 1;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #7083b6;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Ajuste do tamanho dos ícones de social media */
+.social-icons img {
+  margin-left: 10px;
+  width: 24px; /* Defina a largura desejada */
+  height: 24px; /* Defina a altura desejada */
+}
+
+  
+  /* Modais */
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    color: #7083b6;
+  }
+  
+  .close-btn img {
+    cursor: pointer;
+  }
+  
+  /* Formulário de Login */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-btn {
+    background-color: transparent;
+    border: 2px solid #130c55;
+  }
+  
+  .submit-btn {
+    background-color: #0b0f53;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  .interactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .likes img, .comments img {
+    margin-right: 5px;
+  }
+  
+  .send-btn img {
+    cursor: pointer;
+  }
+  
+  .comment-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+.comment-icon {
+  width: 32px;  /* Tamanho desejado para o ícone de comentário */
+  height: 32px; /* Tamanho desejado para o ícone de comentário */
+  color: #FFFFFE; /* Ajuste da cor quando ativo */
+}
+  
+  .comment-section input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #0f0a58;
+    border-radius: 5px;
+  }
+  
+  .send-btn {
+    background-color: transparent;
+    border: none;
+  }
+  

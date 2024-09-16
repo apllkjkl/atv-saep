@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotografia Gelada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com Logo e Login -->
+  <header>
+    <div class="logo">Fotografia Gelada</div>
+    <button id="loginBtn" class="login-btn">Login</button>
+  </header>
+
+  <!-- Barra de navegação -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Corpo com as imagens organizadas em linhas e colunas -->
+  <main>
+    <div class="gallery">
+      <!-- Primeira linha -->
+      <img src="/assets/Mount_everest.jpg" alt="Everest" class="img1">
+      <img src="/assets/Mt._Fuji.jpg" alt="Monte Fuji" class="img2">
+      <img src="/assets/Denali-1.jpg" alt="Denali" class="img3">
+      <img src="/assets/Dykh_Tau.jpg" alt="Dykh-Tau- Russia" class="img3">
+      
+      <!-- Segunda linha -->
+      <img src="/assets/conheca-os-encantos-dos-alpes-suicos.jpg" alt="Alpes Suiços- Suíça" class="img1">
+      <img src="/assets/Dawn_on_the_S_rim_of_the_Grand_Canyon_(8645178272).jpg" alt="Grand Canyon" class="img1">
+      <img src="/assets/mont fuji2.jpg" alt="Monte Fuji" class="img2">
+      <img src="/assets/Aconcagua-1.jpg" alt="Aconcágua, o ponto mais alto da Cordilheira dos Andes" class="img3">
+      <!-- Terceira linha -->
+      <img src="/assets/640px-Mbcourmayeur0001.jpg" alt="Monte Branco-Fronteira entre França e Itália" class="img1">
+      <img src="/assets/Mount_Elbrus_May_2008.jpg" alt="Monte Elbrus" class="img2">
+      <img src="/assets/Kirkjufell.jpg" alt="Kirkjufell é um dos belos cenários da Islândia
+      " class="img3">
+      <!-- Quarta linha -->
+      <img src="assets/mont-blanc-2551005_1920-1-1024x576.jpg" alt="Monte Branco" class="img1">
+      <img src="/assets/Hero_ Colorado Springs Icons - Hero 2.jpg" alt="Pico Pikes" class="img1">
+      <img src="/assets/Huandoy_Peru.jpg" alt="Huandoy" class="img2">
+      <img src="/assets/monte-olimpo.jpg" alt="Monte Olimpo- Grécia" class="img3">
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-logo">Fotografia Gelada</div>
+    <div class="social-icons">
+      <img src="/assets/icons8-instagram.svg" alt="Instagram">
+      <img src="/assets/icons8-youtube.svg" alt="YouTube">
+      <img src="/assets/icons8-tiktok.svg" alt="TikTok">
+    </div>
+    <div class="copyright">Maria Clara, Copyright 2024</div>
+  </footer>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <hr>
+      <label for="nickname">Nickname</label>
+      <input type="text" id="nickname" placeholder="Insira seu nickname">
+      <label for="password">Senha</label>
+      <input type="password" id="password" placeholder="Insira sua senha">
+      <div class="modal-buttons">
+        <button id="cancelBtn" class="cancel-btn">Cancelar</button>
+        <button id="loginSubmitBtn" class="submit-btn">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Interação com Foto -->
+  <div id="photoModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="photoName">Nome da Foto</h2>
+        <button id="closePhotoModal" class="close-btn"><img src="/assets/icons8-x (1).svg" alt="Fechar"></button>
+      </div>
+      <img id="photoImage" src="" alt="Foto Selecionada" class="photo">
+      <div class="interactions">
+        <div class="likes">
+          <img src="coração.svg" id="likeIcon" alt="Curtir">
+          <span id="likeCount">0</span> curtidas
+        </div>
+        <div class="comments">
+          <img src="" alt="Comentários">
+          <span id="commentCount">0</span> comentários
+        </div>
+      </div>
+      <div class="comment-section">
+        <input type="text" id="commentInput" placeholder="Adicionar um comentário...">
+        <button id="sendComment" class="send-btn"><img src="send.svg" alt="Enviar"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
